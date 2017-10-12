@@ -863,6 +863,18 @@
                     'fault',
                     noDetail: true
                 },
+                rvd: {
+                    url: 'maps/reistijdenauto',
+                    label_short: 'Reistijden',
+                    label_long: 'Reistijden',
+                    layers: ['reistijdenauto'],
+                    minZoom: 11,
+                    maxZoom: 16,
+                    legend: 'maps/reistijdenauto?version=1.3.0&service=WMS&request=' +
+                    'GetLegendGraphic&sld_version=1.1.0&layer=reistijdenauto&format=image/png&STYLE=de' +
+                    'fault',
+                    noDetail: true
+                },
 
                 // Panoramabeelden
                 pano: {
@@ -1039,7 +1051,8 @@
                     overlays: [
                         'pv',
                         'pvb',
-                        'pvr'
+                        'pvr',
+                        'rvd'
                     ]
                 }
             ]
