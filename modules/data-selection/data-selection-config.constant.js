@@ -191,6 +191,9 @@
                             slug: 'subcategorie',
                             label: 'Subcategorie'
                         }, {
+                            slug: 'bijzondere_rechtstoestand',
+			    label: 'Bijzondere rechtstoestand'
+			}, {
                             slug: 'stadsdeel_naam',
                             label: 'Stadsdeel'
                         }, {
@@ -206,10 +209,25 @@
                             slug: 'openbare_ruimte',
                             label: 'Openbare ruimte'
                         }, {
+			    slug: 'sbi_l1',
+			    label: 'SBI L1'
+			}, {
+			    slug: 'sbi_l2',
+			    label: 'SBI L2'
+			}, {
+			    slug: 'sbi_l3',
+			    label: 'SBI L3'
+			}, {
+			    slug: 'sbi_l4',
+			    label: 'SBI L4'
+			}, {
+			    slug: 'sbi_code',
+			    label: 'SBI code'
+			}, {
                             slug: 'postcode',
                             label: 'Postcode'
-                        }
-                    ],
+			},
+		    ],
                     CONTENT: {
                         TABLE: [
                             {
@@ -240,9 +258,18 @@
                             },
                             {
                                 label: 'SBI-code',
-                                variables: ['sbi_code']
+                                variables: ['sbi_code'],
+                            },
+			    {
+                                label: 'Bijzondere Rechtstoestand',
+                                variables: ['bijzondere_rechtstoestand' ],
+                            },
+			    {
+                                label: 'Status',
+                                variables: ['status'],
                             }
                         ],
+
                         LIST: [
                             {
                                 variables: ['handelsnaam']
